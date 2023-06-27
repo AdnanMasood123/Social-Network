@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_Post"
+        android:icon="@drawable/add_post"
+        android:title="Add new Post">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Home"
+        android:icon="@drawable/home"
+        android:title="Home">
+    </item>
+
+    <item
+        android:id="@+id/nav_Friends"
+        android:icon="@drawable/friends"
+        android:title="Firends">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Find_Friends"
+        android:icon="@drawable/find_people"
+        android:title="Find Friends">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Messages"
+        android:icon="@drawable/messages"
+        android:title="Messages">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Settings"
+        android:icon="@drawable/settings"
+        android:title="Settings">
+    </item>
+
+    <item
+        android:id="@+id/nav_Chat_Rooms"
+        android:icon="@drawable/messages"
+        android:title="Chat Rooms">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Logout"
+        android:icon="@drawable/logout"
+        android:title="Logout">
+    </item>
+
+</menu>

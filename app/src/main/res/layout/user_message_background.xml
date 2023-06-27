@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_gravity="end"
+    android:elevation="8dp"
+    app:cardCornerRadius="9dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idTvUser"
+            android:text="User Messages Display"
+            android:padding="13dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/Facebook_Color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        .<ImageView
+        android:src="@drawable/man"
+        android:background="@color/Facebook_Color"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </ImageView>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

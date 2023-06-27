@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SetupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/register"
+        tools:context=".SetupActivity">
+
+
+        <EditText
+            android:id="@+id/Setp_Profile_FullName"
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/username"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textMultiLine"
+
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Setup_Profile_Country"></EditText>
+
+        <EditText
+            android:id="@+id/Setup_Profile_Country"
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/username"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Country"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Setup_Profile_Name" />
+
+        <EditText
+            android:id="@+id/Setup_Profile_Name"
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/Setup_Profile_Image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/username"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Username"
+            android:inputType="textMultiLine"
+
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Setup_Profile_Image"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/Setup_Profile_button"
+            android:layout_width="201dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/Setup_Profile_Country"
+            android:background="@drawable/inputs"
+            android:gravity="center"
+            android:text="Save"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Setp_Profile_FullName"
+            app:layout_constraintVertical_bias="0.159" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Setup_Profile_Image"
+            android:layout_width="177dp"
+            android:layout_height="172dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

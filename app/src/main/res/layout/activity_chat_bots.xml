@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ChatBotsActivity">
+
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatbot_recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/myLinearLayout"
+        android:layout_below="@id/main_page_toolbar"
+        android:background="@color/grey"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:backgroundTint="@color/cardview_light_background"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <EditText
+            android:id="@+id/input_group_message"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Add  a Text  here....."
+            android:padding="17dp">
+        </EditText>
+
+
+        <ImageButton
+            android:id="@+id/send_message_button"
+            android:layout_width="71dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/ic_menu_send">
+        </ImageButton>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

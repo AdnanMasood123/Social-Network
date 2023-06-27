@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_gravity="start"
+    android:elevation="8dp"
+    app:cardCornerRadius="9dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:src="@drawable/botu"
+            android:background="@color/grey"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/idTvBot"
+            android:text="Bot Messages Display"
+            android:padding="13dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

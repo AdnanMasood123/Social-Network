@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".Person_Profile_Activity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Person_Profile_Image"
+        android:layout_width="185dp"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/Person_Profile"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Person Profile"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_Image">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Person_Profile_Relationship"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Relationship Status"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_Country"></TextView>
+
+    <TextView
+        android:id="@+id/Person_Profile_Country"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Country"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_UserName">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Person_Profile_UserName"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_SendRequest_button">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Person_Profile_status"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="User Status"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile">
+    </TextView>
+
+    <Button
+        android:id="@+id/Person_Profile_SendRequest_button"
+        android:layout_width="229dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:text="Send Request"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Person_Profile_CancelRequest_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+
+    <Button
+        android:id="@+id/No_Of_Posts"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:text="Posts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_Relationship"
+        app:layout_constraintVertical_bias="0.42">
+    </Button>
+
+
+    <Button
+        android:id="@+id/Friends"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:text="Friends"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Person_Profile_Relationship"
+        app:layout_constraintVertical_bias="0.42"></Button>
+
+    <Button
+        android:id="@+id/Person_Profile_CancelRequest_button"
+        android:layout_width="122dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/inputs"
+        android:backgroundTint="@color/browser_actions_bg_grey"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

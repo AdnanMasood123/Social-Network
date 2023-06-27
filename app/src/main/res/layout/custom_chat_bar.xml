@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Facebook_Color">
+
+    <TextView
+        android:id="@+id/chat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="11dp"
+        android:padding="5dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/chat_Last_Screen"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/chat_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="-38dp"
+        android:layout_marginEnd="9dp"
+        android:padding="5dp"
+        android:text="Last Screen"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        tools:ignore="MissingConstraints">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+</RelativeLayout>
